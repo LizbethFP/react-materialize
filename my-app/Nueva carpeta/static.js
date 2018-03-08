@@ -102,6 +102,7 @@ class Vehiculo {
 
 class Auto extends Vehiculo {
   constructor (llantas, asientos, motor, marca, modelo, retrovisor, puertas) {
+    super(llantas, asientos, motor, marca, modelo, retrovisor)
     this.puertas = puertas;
   }
   
@@ -116,7 +117,10 @@ class Moto extends Vehiculo {
 let auto = new Vehiculo('4', '5', 'FDGXL200', 'Nissan', 'Sedan', '2', '4');
 console.log(auto.puertas);
 
+
+
 /* Grupo de KAM */ 
+/*
 class Vehiculo{
   constructor (marca, peso, madein){
       this.marca = marca;
@@ -148,4 +152,5 @@ class Vehiculo{
  
  // console.log(auto)
  console.log(auto.avanzar())
+ */
 
